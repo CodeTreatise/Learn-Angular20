@@ -98,130 +98,33 @@
 
 ## Line-by-Line Audit: angular-course/01-introduction-and-setup/1.5-typescript-fundamentals.md - **DONE**
 
-| Line(s) | Content/Section | Strengths | Areas for Improvement | Recommendation |
-|---------|-----------------|-----------|----------------------|----------------|
-| 1 | `# Module 1.5: TypeScript Fundamentals for Angular` | Clear, descriptive heading. | None. | Maintain clarity for all module headings. |
-| 2 | `**Objective:** ...` | States the learning objective up front. | Could specify measurable outcomes. | Add explicit outcomes (e.g., "Understand and use TypeScript types, interfaces, classes, and decorators in Angular"). |
-| 4 | `---` | Good use of section break. | None. | Consistent use of breaks is helpful. |
-| 6-13 | `### Why TypeScript?` | Explains the necessity and benefits of TypeScript in Angular. | Could mention TypeScript’s role in tooling and error prevention. | Add a note on how TypeScript improves code quality and maintainability. |
-| 15-22 | Core TypeScript Concepts intro | Sets clear expectations for the section. | None. | Maintain this structure for all fundamentals sections. |
-| 24-38 | Types and syntax | Provides clear syntax and examples for primitive types. | Could mention union types and type inference. | Add a brief note on union types and type inference. |
-| 40-61 | Interfaces | Explains interfaces, syntax, and usage with examples. | Could mention interface extension and optional properties. | Add a note on extending interfaces and more complex shapes. |
-| 63-87 | Classes | Explains class structure, properties, methods, and constructors with examples. | Could mention access modifiers (`public`, `private`, `protected`). | Add a note on access modifiers and their use in Angular. |
-| 89-109 | Decorators | Explains what decorators are and provides Angular-specific examples. | Could mention other decorator types (e.g., `@Input`, `@Output`). | Add a note on property and method decorators in Angular. |
-| 111-113 | Summary statement | Reassures learners that this is enough to get started. | Could link to further TypeScript resources. | Add a link to TypeScript documentation for deeper learning. |
-| 115-131 | Quick Quiz | Provides a self-assessment to reinforce learning. | Could provide answers or explanations. | Add answers/explanations for the quiz. |
-| 133-164 | Navigation links | Good navigation and module closure. | None. | Maintain navigation links for user flow. |
+| Line/Block | Strengths | Areas for Improvement | Recommendations |
+|------------|-----------|----------------------|-----------------|
+| Title & Objective | Clearly states the learning goals and outcomes. | None. | Maintain this clarity in all module introductions. |
+| Why TypeScript? | Explains the necessity and benefits of TypeScript in Angular. | Could mention gradual typing and migration from JS. | Add a note about gradual migration from JavaScript. |
+| Core TypeScript Concepts | Covers types, interfaces, classes, and decorators. | Could mention enums and generics for completeness. | Add a tip about using enums and generics in Angular. |
+| Types Section | Explains syntax, inference, and union types. | Could mention literal types and type aliases. | Add a note about type aliases and literal types. |
+| Interfaces Section | Shows syntax, extension, and usage. | Could mention interface vs. type alias. | Add a tip about when to use interface vs. type. |
+| Classes Section | Explains constructors, properties, and access modifiers. | Could mention readonly and static properties. | Add a note about readonly/static in classes. |
+| Decorators Section | Explains Angular decorators with examples. | Could mention custom decorators and their use cases. | Add a tip about creating custom decorators. |
+| Quiz | Reinforces learning with questions and answers. | Could mention more scenario-based questions. | Add a few scenario-based quiz questions. |
+| Navigation Links | Maintains continuity between modules. | None. | Continue this practice for all modules. |
 
-**General Notes:**
-- The file is well-structured, clear, and beginner-friendly.
-- Examples are practical and relevant to Angular development.
-- Consider expanding on advanced TypeScript features as learners progress.
-- Maintain consistency in structure and navigation across all fundamentals modules.
+### General Observations
+- The file is well-structured, with clear sections and logical flow.
+- Code samples and quizzes are modern and relevant.
+- Could further highlight advanced TypeScript features and migration strategies.
 
----
-
-## Line-by-Line Audit: angular-course/02-components-and-templates/2.1-components-deep-dive.md - **DONE**
-
-| Line(s) | Content/Section | Strengths | Areas for Improvement | Recommendation |
-|---------|-----------------|-----------|----------------------|----------------|
-| 1 | `# Module 2.1: Components Deep Dive` | Clear, descriptive heading. | None. | Maintain clarity for all module headings. |
-| 2 | `**Objective:** ...` | States the learning objective up front. | Could specify measurable outcomes. | Add explicit outcomes (e.g., "Understand component structure, communication, and generation"). |
-| 4 | `---` | Good use of section break. | None. | Consistent use of breaks is helpful. |
-| 6-13 | `### The Philosophy of Components` | Explains component-based architecture and its benefits. | Could add a real-world analogy for modularity. | Add an analogy (e.g., Lego blocks for UI). |
-| 15-22 | Component tree diagram | Visualizes component hierarchy. | Mermaid diagrams may not render everywhere. | Add a text summary for accessibility. |
-| 24-38 | Anatomy of a component and diagram | Breaks down the four essential parts of a component. | Could mention the role of test files. | Add a note on `.spec.ts` files. |
-| 40-61 | Component communication and diagram | Explains `@Input` and `@Output` with a clear diagram. | Could add a real-world analogy for event/data flow. | Add an analogy (e.g., parent/child communication). |
-| 63-100 | Full example: parent/child components | Provides a practical, real-world example. | Could mention how to test component interaction. | Add a note on testing parent-child communication. |
-| 101-120 | `@Component` decorator and metadata | Explains key metadata properties and best practices. | Could mention custom events and advanced selectors. | Add a note on custom events/selectors. |
-| 122-150 | TypeScript class structure | Explains properties, constructor, and methods. | Could mention lifecycle hooks. | Add a note on lifecycle hooks and their use. |
-| 152-170 | HTML template example | Shows template syntax and data binding. | Could mention accessibility best practices. | Add a note on alt text and ARIA attributes. |
-| 172-185 | CSS styles example | Demonstrates scoped styling. | Could mention style encapsulation modes. | Add a note on encapsulation options. |
-| 187-210 | Generating components with the CLI | Explains CLI usage and useful flags. | Could mention how to generate standalone components. | Add a note on the `--standalone` flag. |
-| 212-268 | Navigation links | Good navigation and module closure. | None. | Maintain navigation links for user flow. |
-
-**General Notes:**
-- The file is well-structured, clear, and practical for beginners.
-- Diagrams and examples are helpful, but always provide a text summary for accessibility.
-- Consider expanding on testing, accessibility, and advanced component features.
-- Maintain consistency in structure and navigation across all component modules.
+### Practical Recommendations
+- Add a note about gradual migration from JavaScript to TypeScript.
+- Mention enums, generics, and advanced type features.
+- Add tips for type aliases, literal types, and readonly/static properties.
+- Suggest scenario-based quiz questions for deeper learning.
+- Continue using navigation links for user flow.
 
 ---
 
-## Line-by-Line Audit: angular-course/02-components-and-templates/2.2-data-binding-deep-dive.md - **DONE**
-
-| Line(s) | Content/Section | Strengths | Areas for Improvement | Recommendation |
-|---------|-----------------|-----------|----------------------|----------------|
-| 1 | `# Module 2.2: Data Binding Deep Dive` | Clear, descriptive heading. | None. | Maintain clarity for all module headings. |
-| 2 | `**Objective:** ...` | States the learning objective up front. | Could specify measurable outcomes. | Add explicit outcomes (e.g., "Master all forms of data binding in Angular"). |
-| 4 | `---` | Good use of section break. | None. | Consistent use of breaks is helpful. |
-| 6-13 | `### The Core of Dynamic UIs` | Explains the importance of data binding and its role in dynamic UIs. | Could add a real-world analogy for data flow. | Add an analogy (e.g., two-way radio for two-way binding). |
-| 15-38 | Four types of data binding and diagram | Clearly introduces all binding types and their directionality. Diagram is helpful. | Mermaid diagrams may not render everywhere. | Add a text summary for accessibility. |
-| 40-61 | One-way binding: Interpolation | Explains interpolation with clear examples and use cases. | Could mention limitations (e.g., only for strings). | Add a note on interpolation limitations. |
-| 63-87 | One-way binding: Property binding | Explains property binding, syntax, and differences from interpolation. | Could mention binding to custom properties. | Add a note on custom property binding. |
-| 89-113 | One-way binding: Event binding | Explains event binding, syntax, and use cases. | Could mention event bubbling and custom events. | Add a note on event bubbling and custom events. |
-| 115-137 | Event object and `$event` usage | Shows how to use event objects in handlers. | Could mention event typing in TypeScript. | Add a note on event typing for better safety. |
-| 139-174 | Two-way binding: `[(ngModel)]` | Explains two-way binding, syntax, and requirements. | Could mention alternatives to `ngModel` for reactive forms. | Add a note on reactive forms and two-way binding. |
-| 176-200 | How `[(ngModel)]` works under the hood | Explains the underlying mechanism and syntax sugar. | Could mention performance considerations. | Add a note on when to avoid two-way binding for performance. |
-| 202-218 | Navigation links | Good navigation and module closure. | None. | Continue this practice for user-friendliness. |
-
-**General Notes:**
-- The file is well-structured, clear, and practical for beginners.
-- Diagrams and examples are helpful, but always provide a text summary for accessibility.
-- Consider expanding on custom events, reactive forms, and performance tips.
-- Maintain consistency in structure and navigation across all data binding modules.
-
----
-
-## Line-by-Line Audit: angular-course/02-components-and-templates/2.3-directives-deep-dive.md - **DONE**
-
-| Line(s) | Content/Section | Strengths | Areas for Improvement | Recommendation |
-|---------|-----------------|-----------|----------------------|----------------|
-| 1 | `# Module 2.3: Directives Deep Dive` | Clear, descriptive heading. | None. | Maintain clarity for all module headings. |
-| 2 | `**Objective:** ...` | States the learning objective up front. | Could specify measurable outcomes. | Add explicit outcomes (e.g., "Use and create structural and attribute directives in Angular"). |
-| 4 | `---` | Good use of section break. | None. | Consistent use of breaks is helpful. |
-| 6-13 | `### What Are Directives?` | Explains the concept and types of directives. | Could add a real-world analogy for directives. | Add an analogy (e.g., directives as "modifiers" or "instructions" for elements). |
-| 15-38 | Types of directives and focus | Clearly distinguishes between component, structural, and attribute directives. | Could mention custom directive creation. | Add a note on how to create custom directives. |
-| 40-61 | Structural directives: `@if` | Explains conditional rendering with clear examples. | Could mention performance implications of DOM removal. | Add a note on DOM removal and re-creation. |
-| 63-87 | Structural directives: `@for` | Explains iteration, tracking, and empty states. | Could mention pitfalls with mutable arrays. | Add a note on immutability and change detection. |
-| 89-113 | Structural directives: `@switch` | Explains multi-branch rendering with clear examples. | Could mention when to use `@switch` vs. `@if`. | Add a note on choosing between `@switch` and `@if`. |
-| 115-137 | Attribute directives: `[ngClass]` | Explains dynamic class binding with examples and best practices. | Could mention combining with CSS frameworks. | Add a note on using `[ngClass]` with frameworks like Bootstrap. |
-| 139-174 | Attribute directives: `[ngStyle]` | Explains dynamic style binding with examples. | Could mention performance and maintainability. | Add a note on preferring `[ngClass]` for maintainability. |
-| 176-201 | Best practices and summary | Summarizes best practices and provides navigation. | Could mention accessibility considerations. | Add a note on using directives to improve accessibility. |
-| 203-210 | Navigation links | Good navigation and module closure. | None. | Maintain navigation links for user flow. |
-
-**General Notes:**
-- The file is well-structured, clear, and practical for beginners.
-- Examples are relevant and easy to follow.
-- Consider expanding on custom directive creation, performance, and accessibility.
-- Maintain consistency in structure and navigation across all directives modules.
-
----
-
-## Line-by-Line Audit: angular-course/02-components-and-templates/2.4-view-encapsulation.md - **DONE**
-
-| Line(s) | Content/Section | Strengths | Areas for Improvement | Recommendation |
-|---------|-----------------|-----------|----------------------|----------------|
-| 1 | `# Module 2.4: View Encapsulation in Angular` | Clear, descriptive heading. | None. | Maintain clarity for all module headings. |
-| 2 | `**Objective:** ...` | States the learning objective up front. | Could specify measurable outcomes. | Add explicit outcomes (e.g., "Understand and apply view encapsulation strategies in Angular"). |
-| 4 | `---` | Good use of section break. | None. | Consistent use of breaks is helpful. |
-| 6-13 | `### What is View Encapsulation?` | Explains the concept and its importance in Angular. | Could add a real-world analogy for encapsulation. | Add an analogy (e.g., CSS as clothing for components). |
-| 15-38 | Types of encapsulation: Emulated, None, Shadow DOM | Clearly introduces all strategies, their pros/cons, and default behavior. | Could mention browser support for Shadow DOM. | Add a note on Shadow DOM browser compatibility. |
-| 40-61 | How Angular implements encapsulation | Explains the technical details and how styles are scoped. | Could provide a code example for each strategy. | Add code snippets showing how to set encapsulation in a component. |
-| 63-87 | Practical example: style leakage | Demonstrates the impact of different strategies with examples. | Could mention debugging style issues. | Add a tip on using browser dev tools to inspect encapsulation. |
-| 89-113 | When to use each strategy | Offers guidance on choosing the right encapsulation. | Could mention performance implications. | Add a note on performance and maintainability. |
-| 115-137 | Best practices and summary | Summarizes key points and provides actionable advice. | Could mention accessibility considerations. | Add a note on ensuring encapsulated styles do not hinder accessibility. |
-| 139-150 | Navigation links | Good navigation and module closure. | None. | Maintain navigation links for user flow. |
-
-**General Notes:**
-- The file is well-structured, clear, and practical for beginners.
-- Examples and explanations are relevant and easy to follow.
-- Consider expanding on browser compatibility, debugging, and accessibility.
-- Maintain consistency in structure and navigation across all encapsulation modules.
-
----
-
-## Audit: Module 3.1 - The "Why" of Standalone Components (`3.1-why-standalone.md`) - **DONE**
+## Audit: 10.2-content-projection.md - **DONE** - **DONE**ONE** - **DONE**
 
 | Line/Block | Strengths | Areas for Improvement | Recommendations |
 |------------|-----------|----------------------|-----------------|
@@ -240,7 +143,7 @@
 
 **General Notes:**
 - The file is well-organized, with a logical flow from problem to solution.
-- Use of diagrams and code samples enhances understanding.
+- Code samples and diagrams enhance understanding.
 - Accessibility could be improved with alt text for diagrams.
 - Consider adding more practical migration advice for teams with legacy codebases.
 
@@ -306,7 +209,7 @@
 | Solution: Services & SoC | Clearly introduces the concept of services and separation of concerns. | Could mention that services are plain TypeScript classes for beginners. | Add a note clarifying that services are just classes with decorators. |
 | SoC Principle Explanation | Explains the division of responsibilities between components and services. | None. | Maintain this clear separation in all examples. |
 | Mermaid Diagram (SoC) | Effectively shows the relationship between components and services. | May not render everywhere; lacks alt text. | Add alt text or a brief description for accessibility. |
-| Key Purposes of Services | Comprehensive, practical, and covers all major use cases. | Could mention that services can also be injected into other services. | Add a note about service-to-service injection. |
+| Key Purposes of Services | Comprehensive, well-structured, and covers all major use cases. | Could mention that services can also be injected into other services. | Add a note about service-to-service injection. |
 | Example: LoggerService, UserService, ShoppingCartService, CalculatorService | Realistic, practical examples that reinforce the concepts. | Could add a short code snippet for each example for clarity. | Add brief code snippets or links to each example. |
 | `providedIn: 'root'` Explanation | Clearly explains singleton services and best practices. | Could mention alternative provider scopes (e.g., in component or module). | Add a note on other provider scopes and when to use them. |
 | DataService Example | Well-commented, practical, and easy to follow. | Could mention how to test such a service. | Add a tip or link on unit testing services. |
@@ -318,8 +221,8 @@
 **General Notes:**
 - The file is well-structured, clear, and practical for beginners.
 - Diagrams and code samples are used effectively to reinforce learning.
-- Accessibility could be improved with alt text for diagrams.
-- Consider adding more advanced service patterns and testing strategies in later modules.
+- Consider expanding on testing, accessibility, and advanced service patterns.
+- Maintain consistency in structure and navigation across all service modules.
 
 ---
 
@@ -578,7 +481,7 @@
 | Template-Driven Approach section | Good explanation of the approach and its context. Mermaid diagram aids understanding. | Could briefly contrast with Reactive Forms for context. | Add a one-line comparison to Reactive Forms for quick context. |
 | When to Use section | Practical, actionable advice for when to use this approach. | Could mention that for complex forms, Reactive Forms are preferred. | Add a note about the limitations for complex/dynamic forms. |
 | Advantages/Disadvantages table | Balanced, honest assessment. Table format is easy to scan. | Some cells are empty (e.g., Testability/Scalability advantages). | Fill in all cells for completeness, or use a dash if not applicable. |
-| Setup: Importing FormsModule | Code sample is clear and up-to-date (standalone components). | Could mention that FormsModule is required in the imports for all template-driven forms, not just standalone. | Add a note for non-standalone module usage. |
+| Setup: Importing FormsModule | Code sample is clear and up-to-date (standalone components). | Could mention common errors (e.g., missing imports). | Add a warning about missing FormsModule import. |
 | MyTemplateFormComponent code | Demonstrates best practices: clear data model, onSubmit handler, use of FormsModule. | Could show type for the form parameter (`NgForm`), and mention why `any` is used if so. | Use `NgForm` type for clarity, or explain why `any` is used. |
 | Core Directives section | Clearly explains `ngModel`, `name`, and `ngForm`. | Could mention that `ngModel` can be used for one-way binding as well. | Add a note about one-way binding with `ngModel`. |
 | Example: Registration Form (Component) | Realistic, practical example. Follows Angular best practices. | Could show type for the form parameter. | Use `NgForm` type for the form argument. |
@@ -610,7 +513,7 @@
 | Line/Block | Strengths | Areas for Improvement | Recommendations |
 |------------|-----------|----------------------|-----------------|
 | Title & Objective | Clear, concise, and sets the context for the module. | None. | Maintain this clarity in all module introductions. |
-| The Need for HTTP Communication | Explains real-world need for HTTP, lists CRUD operations, and introduces HttpClient. Mermaid diagram is helpful. | Could mention RESTful principles and alternatives (e.g., GraphQL). | Add a note on REST vs. other API paradigms for context. |
+| The Need for HTTP Communication | Explains the real-world need for HTTP, lists CRUD operations, and introduces HttpClient. Mermaid diagram is helpful. | Could mention RESTful principles and alternatives (e.g., GraphQL). | Add a note on REST vs. other API paradigms for context. |
 | Setup: Providing HttpClient | Shows modern, standalone Angular setup. Code sample is clear and up-to-date. | Could mention legacy NgModule setup for older projects. | Add a note for NgModule-based projects for backward compatibility. |
 | Making HTTP Requests section | Explains service-based architecture and separation of concerns. | Could mention why services are preferred over direct component injection. | Add a note on testability and maintainability benefits of using services. |
 | GET Requests Example (Service) | Uses interfaces, type safety, and best practices. | Could show error handling in the service, not just in the component. | Add a tip for handling errors in the service layer. |
@@ -621,7 +524,7 @@
 | General HttpClient Usage | Emphasizes separation of concerns and reusability. | Could mention testing HTTP services (e.g., HttpTestingController). | Add a tip or link on unit testing HttpClient services. |
 | Navigation links | Maintains continuity between modules. | None. | Continue this practice. |
 
-### General Observations
+**General Observations:**
 - The file is well-structured, with clear sections and logical flow.
 - Code samples are modern, relevant, and follow Angular best practices.
 - Error handling is demonstrated in components, but could be emphasized more in services.
@@ -654,7 +557,7 @@
 | General RxJS Usage | Emphasizes the power of RxJS for data flow and error recovery. | Could mention testing RxJS-based services. | Add a tip or link on unit testing RxJS pipelines. |
 | Navigation links | Maintains continuity between modules. | None. | Continue this practice. |
 
-### General Observations
+**General Observations**
 - The file is well-structured, with clear sections and logical flow.
 - Code samples are modern, relevant, and follow Angular and RxJS best practices.
 - Error handling is robust and covers both direct and centralized strategies.
@@ -666,74 +569,12 @@
 - Mention async/await integration with Promises.
 - Clarify cold vs. hot Observables.
 - Emphasize unsubscribing and memory management for Observables.
-- Add tips for converting between Promises and Observables.
-- Continue using navigation links for user flow.
-
----
-
-## Audit: 8.2-rxjs-operators.md (Module 8.2: Key RxJS Operators) - **DONE**
-
-| Line/Block | Strengths | Areas for Improvement | Recommendations |
-|------------|-----------|----------------------|-----------------|
-| Title & Objective | Clear, concise, and sets the context for the module. | None. | Maintain this clarity in all module introductions. |
-| Power of RxJS Operators | Explains operator categories and functional style. Diagram is helpful. | Could mention operator classification (creation, transformation, etc.). | Add a note on operator categories for deeper learning. |
-| pipe() Method | Shows correct usage and chaining of operators. | Could mention custom operators. | Add a tip on creating custom RxJS operators. |
-| map() Example | Practical, real-world transformation. | Could mention error handling in mapping. | Add a note on handling errors in transformation pipelines. |
-| switchMap() Example | Demonstrates typeahead and cancellation. | Could mention switchMap pitfalls (e.g., inner observable errors). | Add a tip on error handling with switchMap. |
-| concatMap() & mergeMap() | Explains order and concurrency differences. | Could show practical use cases for each. | Add a table or note comparing use cases for concatMap vs. mergeMap. |
-| filter() Example | Clear, practical filtering. | Could mention filtering on object properties. | Add a tip on filtering complex objects. |
-| take() Example | Shows limiting emissions. | Could mention takeUntil for unsubscribing on destroy. | Add a note on using takeUntil for component cleanup. |
-| debounceTime() | Explains debouncing for user input. | Could mention throttleTime for comparison. | Add a tip on throttleTime vs. debounceTime. |
-| tap() Example | Shows side effects and debugging. | Could mention not to mutate data in tap. | Add a warning about side effects in tap. |
-| catchError() | Explains error recovery. | Could show more advanced error handling patterns. | Add a tip on global error handling strategies. |
-| Conclusion | Summarizes the importance of mastering operators. | None. | Continue emphasizing operator mastery. |
-| Navigation links | Maintains continuity between modules. | None. | Continue this practice.
-
-### General Observations
-- The file is well-structured, with clear sections and logical flow.
-- Code samples are modern and relevant.
-
-### Practical Recommendations
-- Add a note on response transformation and advanced use cases (e.g., caching, cancellation).
-- Emphasize security best practices (e.g., never log sensitive tokens).
-- Mention limiting logging in production environments.
-- Add notes for legacy NgModule setup for teams maintaining older codebases.
-- Include a tip or link on unit testing HTTP interceptors.
-- Continue using navigation links for user flow.
-
----
-
-## Audit: 8.1-observables-vs-promises.md (Module 8.1: Observables vs. Promises) - **DONE**
-
-| Line/Block | Strengths | Areas for Improvement | Recommendations |
-|------------|-----------|----------------------|-----------------|
-| Title & Objective | Clear, concise, and sets the context for the module. | None. | Maintain this clarity in all module introductions. |
-| Challenge of Asynchronous Operations | Explains the need for async handling in modern apps. | Could mention other async patterns (e.g., callbacks, async/await). | Add a brief note on the evolution from callbacks to Promises/Observables. |
-| Promises Section | Good explanation of Promise characteristics, diagram aids understanding. | Could mention Promise chaining and async/await usage. | Add a note on how Promises integrate with async/await. |
-| Promise Example | Realistic, practical code sample. | Could mention error propagation in chained Promises. | Add a tip on error handling in Promise chains. |
-| Observables Section | Explains Observable characteristics, diagram is helpful. | Could mention cold vs. hot Observables. | Add a note on cold/hot Observable distinction. |
-| Observable Example | Shows RxJS usage, operators, and error handling. | Could mention unsubscribing best practices. | Add a note on memory management and unsubscribing. |
-| Why Angular Prefers Observables | Lists key reasons, covers framework-wide usage. | Could mention interoperability with Promises. | Add a note on converting between Promises and Observables. |
-| Summary/Conclusion | Summarizes the importance of mastering Observables. | None. | Continue emphasizing the value of RxJS mastery. |
-| Navigation links | Maintains continuity between modules. | None. | Continue this practice. |
-
-### General Observations
-- The file is well-structured, with clear sections and logical flow.
-- Diagrams and code samples are modern and relevant.
-- Could further highlight cold vs. hot Observables, and async/await with Promises.
-- Memory management and conversion between async types could be emphasized more.
-
-### Practical Recommendations
-- Add a note on the evolution from callbacks to Promises/Observables.
-- Mention async/await integration with Promises.
-- Clarify cold vs. hot Observables.
-- Emphasize unsubscribing and memory management for Observables.
 - Add a tip on converting between Promises and Observables.
 - Continue using navigation links for user flow.
 
 ---
 
-## Audit: 8.2-rxjs-operators.md (Module 8.2: Key RxJS Operators)
+## Audit: 8.2-rxjs-operators.md (Module 8.2: Key RxJS Operators) - **DONE**
 
 | Line/Block | Strengths | Areas for Improvement | Recommendations |
 |------------|-----------|----------------------|-----------------|
@@ -758,11 +599,11 @@
 - Emphasize cleanup and advanced error strategies.
 
 ### Practical Recommendations
-- Add a note on operator categories (creation, transformation, etc.).
-- Mention custom operator creation.
-- Emphasize error handling in transformation and flattening operators.
-- Add a tip on using takeUntil for cleanup.
-- Compare debounceTime and throttleTime.
+- Add a note on response transformation and advanced use cases (e.g., caching, cancellation).
+- Emphasize security best practices (e.g., never log sensitive tokens).
+- Mention limiting logging in production environments.
+- Add notes for legacy NgModule setup for teams maintaining older codebases.
+- Include a tip or link on unit testing HTTP interceptors.
 - Continue using navigation links for user flow.
 
 ---
@@ -775,7 +616,7 @@
 | Problem: Manual Subscriptions | Explains the risk of memory leaks and boilerplate. | Could mention takeUntil as an alternative to manual unsubscribe. | Add a note on takeUntil for manual subscription cleanup. |
 | Solution: async Pipe | Explains benefits, diagrams, and automatic management. | Could mention async pipe with Promises, not just Observables. | Add a note on Promise support in async pipe. |
 | Basic Usage Example | Shows clean, modern Angular code. | Could mention initial null value and loading states. | Add a tip on handling loading and null values. |
-| Handling Null Values | Demonstrates @if and fallback UI. | Could mention Angular version requirement for @if. | Add a note on @if being Angular 17+ and alternatives for older versions. |
+| Handling Null Values | Demonstrates @if and fallback UI. | Could mention Angular version requirement for @if. | Add a note on @if being Angular 17+, and show alternative for older versions. |
 | Using with *ngIf/@if | Shows best practice for unwrapping values. | Could mention multiple async pipes in a template. | Add a tip on using multiple async pipes efficiently. |
 | Chaining Observables | Shows combineLatest and map usage. | Could mention error handling in combined streams. | Add a tip on error handling with combineLatest. |
 | When NOT to Use async Pipe | Explains side effects and complex logic scenarios. | Could mention using async pipe with custom pipes. | Add a note on combining async with custom pipes. |
@@ -801,98 +642,13 @@
 
 | Line/Block | Strengths | Areas for Improvement | Recommendations |
 |------------|-----------|----------------------|-----------------|
-| Title & Objective | Clear, concise, and sets the context for the module. | None. | Maintain this clarity in all module introductions. |
-| Challenge of State Management | Explains real-world scenarios and the need for shared state. | Could mention other state management patterns (e.g., Redux, services with plain subjects). | Add a note on alternative state management approaches. |
-| Solution: Centralized State with BehaviorSubject | Explains BehaviorSubject features and best practices. Diagram is helpful. | Could mention ReplaySubject and Subject as alternatives. | Add a note comparing BehaviorSubject, Subject, and ReplaySubject. |
-| Shared State Service Example | Shows best practices for encapsulation and state mutation. | Could mention immutability for complex state. | Add a tip on using immutable patterns for complex state. |
-| Consuming State in Components | Demonstrates async pipe usage and separation of concerns. | Could mention error handling in state streams. | Add a tip on error handling in shared state Observables. |
-| When to Use BehaviorSubject | Lists practical scenarios for simple state. | Could mention when to migrate to more advanced solutions. | Add a note on migration to NgRx or NGXS for complex state. |
-| Limitations of BehaviorSubject | Honest about complexity and scaling issues. | Could mention performance considerations for large state trees. | Add a tip on performance and modularization. |
-| Hands-on Exercise | Practical, step-by-step, encourages experimentation. | Could mention testing stateful services. | Add a tip on unit testing state management services. |
-| Navigation links | Maintains continuity between modules. | None. | Continue this practice for user-friendliness. |
-
-**General Observations:**
-- The file is well-structured, with clear sections and logical flow.
-- Code samples are modern and relevant.
-- Could further highlight alternative state patterns, immutability, and migration strategies.
-- Emphasize error handling and performance for larger state.
-
-### Practical Recommendations
-- Add a note on alternative state management patterns.
-- Compare BehaviorSubject, Subject, and ReplaySubject.
-- Emphasize immutability for complex state.
-- Add tips for error handling and performance.
-- Mention migration to advanced state libraries for scaling.
-- Continue using navigation links for user flow.
-
----
-
-## Audit: Module 8.5 - Introduction to NgRx - **DONE**
-
-| Line/Block | Strengths | Areas for Improvement | Recommendations |
-|------------|-----------|----------------------|-----------------|
-| Title & Objective | Clear, concise, and sets the context for the module. | None. | Maintain this clarity in all module introductions. |
-| Need for Advanced State Management | Explains scaling issues and why simple patterns break down. | Could mention other advanced state libraries (e.g., Akita, Elf). | Add a note on alternative advanced state libraries. |
-| What is NgRx? | Explains Redux principles and NgRx architecture. Diagram is helpful. | Could mention learning curve and boilerplate. | Add a note on the learning curve and code overhead. |
-| Key Concepts in NgRx | Explains Store, Actions, Reducers, Selectors, Effects with code. | Could mention best practices for organizing NgRx code. | Add a tip on folder structure and code organization. |
-| When to Consider NgRx | Lists practical scenarios for using NgRx. | Could mention migration strategies from simpler patterns. | Add a note on gradual migration to NgRx. |
-| Alternatives to NgRx | Lists lighter-weight and alternative solutions. | Could mention pros/cons of each alternative. | Add a table or note comparing alternatives. |
-| Summary/Conclusion | Honest about trade-offs and suitability. | None. | Continue emphasizing fit-for-purpose state management. |
-| Navigation links | Maintains continuity between modules. | None. | Continue this practice. |
-
-**General Observations:**
-- The file is well-structured, with clear sections and logical flow.
-- Diagrams and code samples are modern and relevant.
-- Could further highlight migration strategies, code organization, and alternative libraries.
-- Emphasize learning curve and trade-offs for large-scale state management.
-
-### Practical Recommendations
-- Add a note on alternative advanced state libraries.
-- Emphasize code organization and best practices for NgRx.
-- Add tips for gradual migration from simpler state patterns.
-- Compare pros/cons of alternative state libraries.
-- Continue using navigation links for user flow.
-
----
-
-## Audit: 9.1-what-are-signals.md (Module 9.1: What Are Angular Signals?) - **DONE**
-
-| Line/Block | Strengths | Areas for Improvement | Recommendations |
-|------------|-----------|----------------------|-----------------|
-| Title & Objective | Clear, concise, and sets the context for the module. | None. | Maintain this clarity in all module introductions. |
-| Evolution of Reactivity | Explains Zone.js and its drawbacks, motivating signals. | Could mention how signals fit with Angular's future plans (e.g., zoneless). | Add a note on the future of zoneless Angular. |
-| What are Signals? | Good explanation, diagram aids understanding. | Could mention signals' limitations (e.g., async flows). | Add a note on when not to use signals. |
-| Key Characteristics | Lists all major features and benefits. | Could mention immutability best practices. | Add a tip on using immutable data with signals. |
-| Signals vs. RxJS Observables | Clear, honest comparison table. | Could mention interoperability (toSignal, toObservable). | Add a note on converting between signals and observables. |
-| When to Use Which? | Practical, actionable advice. | Could mention hybrid patterns. | Add a tip on combining signals and observables in real apps. |
-| Summary/Conclusion | Summarizes the value of signals. | None. | Continue emphasizing signals' role in modern Angular. |
-| Navigation links | Maintains continuity between modules. | None. | Continue this practice. |
-
-### General Observations
-- The file is well-structured, with clear sections and logical flow.
-- Diagrams and code samples are modern and relevant.
-- Could further highlight zoneless Angular, immutability, and hybrid patterns.
-- Emphasize interoperability with RxJS.
-
-### Practical Recommendations
-- Add a note on the future of zoneless Angular.
-- Emphasize immutability best practices with signals.
-- Add tips for interoperability and hybrid usage with RxJS.
-- Continue using navigation links for user flow.
-
----
-
-## Audit: 9.3-computed-signals.md (Module 9.3: Computed Signals) - **DONE**
-
-| Line/Block | Strengths | Areas for Improvement | Recommendations |
-|------------|-----------|----------------------|-----------------|
-| Title & Objective | Clear, concise, and sets the context for the module. | None. | Maintain this clarity in all module introductions. |
-| Need for Derived State | Explains derived state and real-world use cases. | Could mention pitfalls of manual derived state. | Add a note on avoiding manual synchronization. |
+| Title & Objective | Clear, focused, and sets the learning goal. | None | Maintain this clarity in all modules. |
+| Challenge of State Management | Explains derived state and real-world use cases. | Could mention pitfalls of manual derived state. | Add a note on avoiding manual synchronization. |
 | What are Computed Signals? | Explains memoization, read-only nature, and performance. | Could mention debugging computed signals. | Add a tip on debugging computed dependencies. |
 | Creating a Computed Signal | Shows syntax and practical examples. | Could mention computed signals with async data. | Add a note on using computed with signals from async sources. |
 | Best Practices | Lists purity, performance, and read-only advice. | Could mention circular dependencies. | Add a warning about circular computed dependencies. |
 | Summary/Conclusion | Summarizes the value of computed signals. | None. | Continue emphasizing best practices. |
-| Navigation links | Maintains continuity between modules. | None. | Continue this practice. |
+| Navigation links | Maintains continuity between modules. | None | Continue this practice. |
 
 ### General Observations
 - The file is well-structured, with clear sections and logical flow.
@@ -912,7 +668,7 @@
 
 | Line/Block | Strengths | Areas for Improvement | Recommendations |
 |------------|-----------|----------------------|-----------------|
-| Title & Objective | Clear, concise, and sets the context for the module. | None. | Maintain this clarity in all module introductions. |
+| Title & Objective | Clear, focused, and sets the learning goal. | None | Maintain this clarity in all modules. |
 | Need for Side Effects | Explains side effects and when they're needed. | Could mention effect cleanup and memory management. | Add a note on cleanup functions and effect destruction. |
 | What are Effects? | Explains dependency tracking and side effect logic. | Could mention effect scope (component/service). | Add a tip on where to place effects for best results. |
 | Creating an Effect | Shows syntax and practical examples. | Could mention error handling in effects. | Add a tip on handling errors in effect logic. |
@@ -933,12 +689,12 @@
 
 | Line/Block | Strengths | Areas for Improvement | Recommendations |
 |------------|-----------|----------------------|-----------------|
-| Title & Objective | Clear, concise, and sets the context for the module. | None. | Maintain this clarity in all module introductions. |
+| Title & Objective | Clear, focused, and sets the learning goal. | None | Maintain this clarity in all modules. |
 | Signals and RxJS: Complementary Tools | Explains why both are needed and how to bridge them. | Could mention performance considerations when converting. | Add a note on performance and memory when bridging signals/observables. |
 | toSignal() Example | Shows syntax, options, and practical use. | Could mention error handling and initial value strategies. | Add a tip on handling errors and loading states with toSignal. |
 | toObservable() Example | Demonstrates debouncing and RxJS operators. | Could mention unsubscribing and cleanup. | Add a note on managing subscriptions from toObservable. |
 | Conclusion | Summarizes the value of interop. | None. | Continue emphasizing flexibility and best practices. |
-| Hands-on Exercise | Practical, step-by-step, reinforces learning. | Could mention testing interop logic. | Add a tip on unit testing interop code. |
+| Hands-on Exercise | Practical, step-by-step, reinforces learning. | Could include testing interop logic. | Add a tip on unit testing interop code. |
 | Navigation links | Maintains continuity between modules. | None. | Continue this practice. |
 
 ### General Observations
@@ -956,12 +712,12 @@
 
 ---
 
-## Audit: 11.2-micro-frontends.md - **DONE**
+## Audit: 11.1-introduction-to-micro-frontends.md - **DONE**
 
 | Line/Block | Strengths | Areas for Improvement | Recommendations |
 |------------|-----------|----------------------|-----------------|
 | Title & Objective | Clear, focused, and sets the learning goal. | None | Maintain this clarity in all modules. |
-| The Problem: Monolithic Frontends | Effectively explains the pain points of monolithic frontends. | Could mention testing and maintainability challenges. | Add a note on how monoliths can hinder automated testing and maintainability. |
+| The Challenge: Monolithic Frontends | Effectively explains the pain points of monolithic frontends. | Could mention testing and maintainability challenges. | Add a note on how monoliths can hinder automated testing and maintainability. |
 | Problems List | Practical, relatable, and concise. | Could include onboarding and code ownership issues. | Add a bullet on onboarding friction and unclear code ownership. |
 | Mermaid Diagram | Visualizes the monolithic structure well. | May not render in all markdown viewers. | Provide a fallback text description for non-mermaid environments. |
 | The Solution: Micro Frontends | Good definition and context. | Could mention that micro frontends are not a universal solution. | Add a sentence about trade-offs and when not to use micro frontends. |
@@ -984,6 +740,32 @@
 
 ---
 
+## Audit: 11.2-micro-frontends.md - **DONE**
+
+| Line/Block | Strengths | Areas for Improvement | Recommendations |
+|------------|-----------|----------------------|-----------------|
+| Title & Objective | Clear, focused, and sets the learning goal. | None | Maintain this clarity in all modules. |
+| The Gap Between Web and Native Apps | Good context, explains the motivation for PWAs. | Could mention update friction and app store review delays for native apps. | Add a note about how PWAs avoid app store review/update delays. |
+| What are PWAs? | Clear definition and context. | Could mention security and privacy considerations. | Add a note about HTTPS and privacy best practices. |
+| Mermaid Diagram (PWA) | Visualizes PWA features well. | May not render in all markdown viewers. | Provide a fallback text description for non-mermaid environments. |
+| PWA Checklist | Comprehensive, covers all key characteristics. | Could mention accessibility and internationalization. | Add a point about adapting images/media for locales. |
+| Core PWA Technologies | Explains service workers and manifest well. | Could mention browser compatibility and polyfills. | Add a note about checking browser support and using polyfills if needed. |
+| Service Workers | Good explanation and practical use cases. | Could mention debugging and update strategies. | Add a note about debugging service workers and handling updates. |
+| Web App Manifest | Clear, practical, and covers key fields. | Could mention icon size requirements and best practices. | Add a note about providing multiple icon sizes for best results. |
+| Transforming Angular App | Step-by-step, practical, and up-to-date. | Could mention testing on real devices and handling edge cases. | Add a step for testing on various devices and browsers. |
+| ngsw-config.json Example | Realistic, shows practical config. | Could mention security for cached API data. | Add a note about securing sensitive API data and cache invalidation. |
+| Build & Serve Steps | Clear, actionable, and practical. | Could mention CI/CD integration for PWA builds. | Add a note about automating PWA builds in CI/CD pipelines. |
+| Testing Your PWA | Good coverage of tools and methods. | Could mention accessibility and performance audits. | Add a step for running accessibility and performance audits. |
+| Summary Paragraph | Strong wrap-up, highlights PWA benefits. | Could mention real-world case studies and community resources. | Add a sentence about learning from PWA case studies. |
+| Navigation Links | Useful for course flow. | None | Continue this practice for all modules. |
+
+**General Comments:**
+- The file is well-structured, with clear sections and practical code/config samples.
+- Diagrams and exercises are relevant and up-to-date for Angular 20.
+- Consider adding more on runtime i18n, translation management, and accessibility for a holistic view.
+
+---
+
 ## Audit: 11.3-ssr-hydration.md - **DONE**
 
 | Line/Block | Strengths | Areas for Improvement | Recommendations |
@@ -1000,7 +782,7 @@
 | When to Use SSR | Practical, helps learners decide when to use SSR. | Could mention when SSR is not needed (e.g., internal apps). | Add a note about cases where SSR is unnecessary. |
 | Hands-on Exercise | Clear, actionable, and encourages exploration. | Could include troubleshooting tips for common SSR issues. | Add a troubleshooting section for common SSR/hydration problems. |
 | Summary Paragraph | Strong wrap-up, highlights benefits and trade-offs. | Could mention real-world case studies and community resources. | Add a sentence about learning from community case studies. |
-| Navigation Links | Useful for course flow. | None | Continue this practice for all modules. |
+| Navigation Links | Useful for course flow. | None. | Continue this practice for all modules. |
 
 **General Comments:**
 - The file is well-structured, with clear sections and practical code samples.
@@ -1031,7 +813,7 @@
 **General Comments:**
 - The file is well-structured, with clear sections and practical code/config samples.
 - Diagrams and exercises are relevant and up-to-date for Angular 20.
-- Consider adding more on security, accessibility, and real-world case studies for a holistic view.
+- Consider adding more on runtime i18n, translation management, and accessibility for a holistic view.
 
 ---
 
@@ -1042,15 +824,15 @@
 | Title & Objective | Clear, focused, and sets the learning goal. | None | Maintain this clarity in all modules. |
 | The Problem: Blocking the Main Thread | Explains the issue with practical examples and a diagram. | Could mention impact on accessibility and user frustration. | Add a note about how UI blocking affects accessibility and user trust. |
 | Examples of CPU-intensive tasks | Comprehensive and relatable. | Could mention real-world Angular use cases. | Add a bullet on Angular-specific scenarios (e.g., client-side filtering). |
-| Mermaid Diagram (Main Thread) | Visualizes the problem well. | May not render in all markdown viewers. | Provide a fallback text description for non-mermaid environments. |
+| Mermaid Diagram (Main Thread) | Visualizes the problem well. | May not render in all markdown viewers; lacks alt text. | Provide a fallback text description for non-mermaid environments. |
 | The Solution: Web Workers | Clear explanation and diagram. | Could mention security and resource limits. | Add a note about security and browser-imposed resource limits. |
 | Key Characteristics of Web Workers | Well-structured, covers main points. | Could mention transferable objects for performance. | Add a note about using transferable objects for large data. |
 | Using Web Workers in Angular | Practical, step-by-step, and up-to-date. | Could mention debugging and browser support. | Add a note about debugging workers and checking browser compatibility. |
 | Example Worker Script | Clear, well-commented, and idiomatic. | Could mention error handling in the worker. | Add a try/catch block for robust error handling. |
 | Angular Component Example | Detailed, covers setup, communication, and cleanup. | Could mention memory leaks and worker pool patterns. | Add a note about avoiding memory leaks and using worker pools for repeated tasks. |
-| When to Use/Not Use Web Workers | Practical, helps learners decide. | Could mention cost/benefit analysis for each use case. | Add a note about profiling before introducing workers. |
+| When to Use/Not Use Web Workers | Practical, helps learners decide. | Could mention cost/benefit and orchestration complexity. | Add a tip about evaluating orchestration needs. |
 | Summary Paragraph | Strong wrap-up, highlights benefits and trade-offs. | Could mention real-world case studies and community resources. | Add a sentence about learning from community case studies. |
-| Navigation Links | Useful for course flow. | None | Continue this practice for all modules. |
+| Navigation Links | Useful for course flow. | None. | Continue this practice for all modules. |
 
 **General Comments:**
 - The file is well-structured, with clear sections and practical code samples.
@@ -1077,7 +859,7 @@
 
 **General Comments:**
 - The file is well-structured, with clear sections and practical code samples.
-- Diagrams and recommendations are relevant and up-to-date for Angular 20.
+- Recommendations and tool coverage are up-to-date for Angular 20.
 - Consider adding more on supply chain security, compliance, and security testing for a holistic view.
 
 ---
@@ -1096,7 +878,7 @@
 | Translating the Content | Shows XLIFF usage and translation process. | Could mention translation quality assurance. | Add a note about reviewing translations for accuracy and tone. |
 | Building/Serving for Locales | Explains build/serve config well. | Could mention lazy loading of locale data. | Add a note about optimizing bundle size with lazy locale loading. |
 | Other i18n Considerations | Covers pipes, pluralization, RTL/LTR, third-party libs. | Could mention accessibility for translated content. | Add a note about testing accessibility in all locales. |
-| Hands-on Exercise | Practical, step-by-step, encourages experimentation. | Could include edge cases (e.g., missing translations). | Add a troubleshooting step for missing/incorrect translations. |
+| Hands-on Exercise | Practical, step-by-step, encourages experimentation. | Could include edge cases (e.g., missing translations). | Add a troubleshooting step for common translation issues. |
 | Summary Paragraph | Strong wrap-up, highlights i18n's importance. | Could mention real-world case studies and community resources. | Add a sentence about learning from i18n case studies. |
 | Navigation Links | Useful for course flow. | None | Continue this practice for all modules. |
 
@@ -1138,7 +920,7 @@
 | Line/Block | Strengths | Areas for Improvement | Recommendations |
 |------------|-----------|----------------------|-----------------|
 | Title & Objective | Clear, focused, and sets the learning goal. | None | Maintain this clarity in all modules. |
-| The Importance of Testing | Explains the value of testing with practical benefits. | Could mention cost savings and risk reduction. | Add a note about long-term cost savings and risk mitigation. |
+| The Importance of Testing | Explains the value of testing with practical benefits. | Could mention cost and maintenance of E2E suites. | Add a note about balancing E2E coverage and maintenance cost. |
 | Mermaid Diagram (Testing Types) | Visualizes test types and focus areas. | May not render in all markdown viewers. | Provide a fallback text description for non-mermaid environments. |
 | Types of Testing | Clearly distinguishes unit, integration, and E2E. | Could mention contract testing and visual regression. | Add a note about contract and visual regression testing. |
 | Unit Testing Section | Explains focus, goals, and tools well. | Could mention test-driven development (TDD). | Add a note about TDD and its benefits. |
@@ -1147,7 +929,7 @@
 | Testing Tools | Covers frameworks and runners clearly. | Could mention migration from older tools (e.g., Protractor). | Add a note about migrating legacy tests. |
 | Testing Pyramid | Explains strategy and rationale well. | Could mention anti-patterns (e.g., ice cream cone). | Add a warning about anti-patterns in test distribution. |
 | Summary Paragraph | Strong wrap-up, highlights comprehensive strategy. | Could mention continuous integration for tests. | Add a note about running tests in CI/CD pipelines. |
-| Navigation Links | Useful for course flow. | None | Continue this practice in all modules. |
+| Navigation Links | Useful for course flow. | None. | Continue this practice in all modules. |
 
 **General Comments:**
 - The file is well-structured, with clear sections and practical diagrams.
@@ -1172,7 +954,7 @@
 | Navigation Links | Useful for course flow. | None | Continue this practice for all modules. |
 
 **General Comments:**
-- The file is well-structured, with clear sections and practical code samples.
+- The file is well-structured, clear, and practical for beginners.
 - Recommendations and examples are up-to-date for Angular 20.
 - Consider adding more on async testing, teardown, and code coverage for a holistic view.
 
@@ -1193,7 +975,7 @@
 | Navigation Links | Useful for course flow. | None | Continue this practice for all modules. |
 
 **General Comments:**
-- The file is well-structured, with clear sections and practical code samples.
+- The file is well-structured, clear, and practical for beginners.
 - Recommendations and examples are up-to-date for Angular 20.
 - Consider adding more on async/error testing, DI pitfalls, and coverage for a holistic view.
 
@@ -1210,94 +992,22 @@
 | Setting Up Cypress | Step-by-step, practical, and up-to-date. | Could mention CI/CD integration and headless mode. | Add a note about running Cypress in CI and headless environments. |
 | Writing Cypress Tests | Shows syntax, structure, and best practices. | Could mention accessibility and visual regression checks. | Add a tip about including a11y and visual checks in E2E. |
 | Advanced Cypress Features | Explains fixtures, stubbing, and custom commands. | Could mention test data management and flaky test mitigation. | Add a note about managing test data and reducing flakiness. |
-| Hands-on Exercise | Practical, step-by-step, encourages experimentation. | Could mention troubleshooting common Cypress issues. | Add a troubleshooting step for common Cypress errors. |
+| Hands-on Exercise | Practical, step-by-step, encourages experimentation. | Could include troubleshooting deployment issues. | Add a troubleshooting step for common deployment errors. |
 | Summary Paragraph | Strong wrap-up, highlights E2E's value. | Could mention community resources and real-world case studies. | Add a sentence about learning from community case studies. |
-| Navigation links | Useful for course flow. | None | Continue this practice for all modules. |
+| Navigation links | Useful for course flow. | None. | Continue this practice for all modules. |
 
 **General Comments:**
-- The file is well-structured, with clear sections and practical code/config samples.
+- The file is well-structured, with clear sections and practical diagrams.
 - Recommendations and examples are up-to-date for Angular 20.
 - Consider adding more on CI/CD, visual checks, and test data management for a holistic view.
 
 ---
 
-## Audit: 14.1-building-for-production.md - **DONE**
+## Audit: 14.1-angular-material.md - **DONE**
 
 | Line/Block | Strengths | Areas for Improvement | Recommendations |
 |------------|-----------|----------------------|-----------------|
-| Title & Objective | Clear, focused, and sets the learning goal. | None | Maintain this clarity in all modules. |
-| Dev vs. Prod Builds | Explains differences and rationale well. | Could mention security implications of dev builds. | Add a note about not deploying dev builds to production. |
-| Mermaid Diagram (Build Types) | Visualizes build differences. | May not render in all markdown viewers. | Provide a fallback text description for non-mermaid environments. |
-| Production Build Command | Shows correct usage and output. | Could mention custom build configurations. | Add a tip about using custom configs for staging, QA, etc. |
-| Key Optimizations | Explains AOT, tree shaking, minification, bundling, hashing. | Could mention source map handling and license extraction. | Add a note about disabling source maps and extracting licenses. |
-| AOT Compilation | Explains benefits and process well. | Could mention template type checking. | Add a note about strict template type checking. |
-| Tree Shaking | Explains concept and Angular's support. | Could mention side effects in libraries. | Add a tip about marking side-effect-free modules. |
-| Minification/Uglification | Explains process and benefits. | Could mention CSS/HTML minification. | Add a note about optimizing all asset types. |
-| Bundling & Code Splitting | Explains concepts and Angular's automation. | Could mention analyzing bundle sizes. | Add a tip about using bundle analyzers. |
-| Hashing for Cache Busting | Explains concept and importance. | Could mention service worker cache strategies. | Add a note about updating service worker configs for new hashes. |
-| Production Output | Lists and explains output files. | Could mention static asset versioning. | Add a tip about versioning assets for CDN. |
-| angular.json Config | Shows config and budgets. | Could mention enforcing budgets in CI. | Add a note about failing builds on budget errors. |
-| Summary Paragraph | Strong wrap-up, highlights CLI's power. | Could mention monitoring and post-deploy checks. | Add a note about monitoring after deployment. |
-| Navigation Links | Useful for course flow. | None | Continue this practice for all modules. |
-
-**General Comments:**
-- The file is well-structured, with clear sections and practical code/config samples.
-- Recommendations and examples are up-to-date for Angular 20.
-- Consider adding more on monitoring, custom configs, and asset optimization for a holistic view.
-
----
-
-## Audit: 14.2-deployment-strategies.md - **DONE**
-
-| Line/Block | Strengths | Areas for Improvement | Recommendations |
-|------------|-----------|----------------------|-----------------|
-| Title & Objective | Clear, focused, and sets the learning goal. | None | Maintain this clarity in all modules. |
-| The Goal: Making Your App Accessible | Explains deployment context and static hosting. | Could mention CDN and global performance. | Add a note about using CDNs for global reach. |
-| Mermaid Diagrams (Deployment/CI-CD) | Visualizes deployment and CI/CD flows. | May not render in all markdown viewers. | Provide a fallback text description for non-mermaid environments. |
-| Static File Hosting | Explains local and server hosting well. | Could mention HTTPS and security headers. | Add a note about enabling HTTPS and security headers. |
-| Nginx/Apache Config | Shows config and routing for SPAs. | Could mention cache control and compression. | Add a tip about enabling gzip and cache headers. |
-| Cloud Hosting Platforms | Explains Firebase, Netlify, Vercel, AWS, Azure. | Could mention cost, scaling, and vendor lock-in. | Add a note about comparing costs and avoiding lock-in. |
-| Docker/Containerization | Explains multi-stage builds and deployment. | Could mention image security and updates. | Add a note about scanning images and updating base images. |
-| CI/CD Integration | Explains importance and tools. | Could mention rollback strategies. | Add a tip about enabling easy rollbacks in CI/CD. |
-| Hands-on Exercise | Practical, step-by-step, encourages experimentation. | Could mention troubleshooting deployment issues. | Add a troubleshooting step for common deployment errors. |
-| Summary Paragraph | Strong wrap-up, highlights deployment choices. | Could mention monitoring and analytics post-deploy. | Add a note about setting up monitoring and analytics. |
-| Navigation Links | Useful for course flow. | None | Continue this practice for all modules. |
-
-**General Comments:**
-- The file is well-structured, with clear sections and practical code/config samples.
-- Recommendations and examples are up-to-date for Angular 20.
-- Consider adding more on security, cost, and monitoring for a holistic view.
-
----
-
-## Audit: 14.3-ci-cd.md - **DONE**
-
-| Line/Block | Strengths | Areas for Improvement | Recommendations |
-|------------|-----------|----------------------|-----------------|
-| Title & Objective | Clear, focused, and sets the learning goal. | None | Maintain this clarity in all modules. |
-| The Problem: Manual, Error-Prone Processes | Explains pain points and risks well. | Could mention compliance and audit trails. | Add a note about CI/CD for compliance and traceability. |
-| The Solution: CI/CD | Explains CI/CD concepts and benefits. | Could mention security in pipelines. | Add a note about securing secrets and pipeline steps. |
-| Mermaid Diagram (CI/CD Flow) | Visualizes pipeline stages. | May not render in all markdown viewers. | Provide a fallback text description for non-mermaid environments. |
-| CI Principles | Explains frequent commits, automation, and feedback. | Could mention code review and static analysis. | Add a tip about integrating code review and static analysis. |
-| CD Principles | Explains deployment automation and readiness. | Could mention blue/green and canary deployments. | Add a note about advanced deployment strategies. |
-| Pipeline Stages | Explains build, test, deploy steps. | Could mention artifact storage and promotion. | Add a tip about storing and promoting build artifacts. |
-| Popular CI/CD Tools | Lists and describes major tools. | Could mention self-hosted vs. cloud CI/CD. | Add a note about choosing between self-hosted and cloud. |
-| Example: GitHub Actions | Shows a practical YAML workflow. | Could mention secrets management and environment variables. | Add a note about using encrypted secrets and env vars. |
-| Summary Paragraph | Strong wrap-up, highlights automation and quality. | Could mention monitoring pipeline health. | Add a note about monitoring and alerting for CI/CD. |
-| Navigation Links | Useful for course flow. | None | Continue this practice for all modules. |
-
-**General Comments:**
-- The file is well-structured, with clear sections and practical diagrams.
-- Recommendations and tool coverage are up-to-date for Angular 20.
-- Consider adding more on TDD, contract/visual testing, and CI/CD for a holistic view.
-
----
-
-## Audit: 15.1-angular-material.md - **DONE**
-
-| Line/Block | Strengths | Areas for Improvement | Recommendations |
-|------------|-----------|----------------------|-----------------|
-| Title & Objective | Clear, focused, and sets the learning goal. | None | Maintain this clarity in all modules. |
+| Title & Objective | Clear, focused, and sets the learning goal. | None. | Maintain this clarity in all modules. |
 | The Challenge of UI Development | Explains UI challenges and requirements well. | Could mention design tokens and dark mode. | Add a note about design tokens and dark mode support. |
 | UI Component Libraries | Explains value and context for Angular Material. | Could mention alternatives (e.g., PrimeNG, NG-Zorro). | Add a note about evaluating other UI libraries. |
 | Mermaid Diagram (UI Dev) | Visualizes UI library benefits. | May not render in all markdown viewers. | Provide a fallback text description for non-mermaid environments. |
@@ -1307,9 +1017,84 @@
 | Theming | Explains custom themes and Sass usage. | Could mention dynamic theming at runtime. | Add a tip about supporting dynamic theme switching. |
 | Accessibility (A11y) | Highlights built-in a11y features. | Could mention testing a11y with tools. | Add a note about using a11y testing tools (e.g., Axe). |
 | Summary Paragraph | Strong wrap-up, highlights productivity and a11y. | Could mention community resources and real-world case studies. | Add a sentence about learning from Material case studies. |
-| Navigation Links | Useful for course flow. | None | Continue this practice for all modules. |
+| Navigation Links | Useful for course flow. | None. | Continue this practice for all modules. |
 
 **General Comments:**
 - The file is well-structured, with clear sections and practical code/config samples.
 - Recommendations and examples are up-to-date for Angular 20.
 - Consider adding more on alternatives, bundle size, and dynamic theming for a holistic view.
+
+---
+
+## Audit: 14.2-deployment-strategies.md (Module 14.2: Deployment Strategies)
+
+| Line/Block | Strengths | Areas for Improvement | Recommendations |
+|------------|-----------|----------------------|-----------------|
+| Title & Objective | Clearly states the deployment focus and learning goal. | None. | Maintain this clarity in all module introductions. |
+| CI/CD Pipeline Diagram | Visualizes the deployment workflow and stages. | May not render in all markdown viewers; lacks alt text. | Add alt text or a brief description for accessibility. |
+| Static File Hosting | Explains the simplest deployment method and local testing. | Could mention security headers and HTTPS for production. | Add a note about enabling HTTPS and security headers. |
+| Nginx/Apache Config | Shows practical config for Angular routing. | Could mention cache control, compression, and error handling. | Add a tip about enabling gzip, cache headers, and custom error pages. |
+| Cloud Hosting Platforms | Compares Firebase, Netlify, Vercel, AWS, Azure. | Could mention cost, scaling, and vendor lock-in. | Add a note about comparing costs and avoiding lock-in. |
+| Firebase Hosting Steps | Step-by-step, practical, and up-to-date. | Could mention CI/CD integration for automated deploys. | Add a tip about automating deploys with GitHub Actions. |
+| Netlify/Vercel Steps | Explains Git integration and build settings. | Could mention environment variables and preview deploys. | Add a note about using env vars and preview branches. |
+| AWS S3/CloudFront Steps | Explains scalable, CDN-backed deployment. | Could mention cache invalidation and security best practices. | Add a tip about cache invalidation and securing S3 buckets. |
+| Azure Static Web Apps | Explains integration and global distribution. | Could mention serverless API integration. | Add a note about using Azure Functions for APIs. |
+| Dockerfile Example | Shows multi-stage build and Nginx serving. | Could mention image security and updates. | Add a note about scanning images and updating base images. |
+| Docker Deployment | Explains Compose and Kubernetes options. | Could mention cost/benefit and orchestration complexity. | Add a tip about evaluating orchestration needs. |
+| CI/CD Section | Emphasizes automation and reliability. | Could mention rollback strategies and monitoring. | Add a tip about enabling easy rollbacks and monitoring. |
+| Hands-on Exercise | Encourages practical deployment experience. | Could include troubleshooting tips for common deployment issues. | Add a troubleshooting step for common deployment errors. |
+| Navigation Links | Maintains continuity between modules. | None. | Continue this practice for all modules. |
+
+### General Observations
+- The file is well-structured, with clear sections and logical flow.
+- Diagrams and code/config samples are modern and relevant.
+- Could further highlight security, cost, and monitoring for a holistic view.
+
+### Practical Recommendations
+- Add a note about enabling HTTPS and security headers for all production deployments.
+- Recommend gzip, cache headers, and custom error pages in server configs.
+- Compare costs and vendor lock-in for cloud platforms.
+- Suggest automating deploys with CI/CD tools.
+- Highlight cache invalidation and S3 security for AWS.
+- Mention serverless API integration for Azure.
+- Add tips for Docker image security and orchestration evaluation.
+- Emphasize rollback and monitoring in CI/CD.
+- Add troubleshooting tips for deployment errors.
+- Continue using navigation links for user flow.
+
+---
+
+## Audit: 14.3-ci-cd.md (Module 14.3: Continuous Integration/Continuous Delivery (CI/CD))
+
+| Line/Block | Strengths | Areas for Improvement | Recommendations |
+|------------|-----------|----------------------|-----------------|
+| Title & Objective | Clearly states the CI/CD focus and learning goal. | None. | Maintain this clarity in all module introductions. |
+| Problem Statement | Explains the pain points of manual processes. | Could mention compliance and audit trails. | Add a note about CI/CD for compliance and traceability. |
+| Solution: CI/CD | Explains CI/CD concepts and benefits. | Could mention security in pipelines. | Add a note about securing secrets and pipeline steps. |
+| CI/CD Pipeline Diagram | Visualizes the pipeline stages. | May not render in all markdown viewers; lacks alt text. | Add alt text or a brief description for accessibility. |
+| CI Principles | Explains frequent commits, automation, and feedback. | Could mention code review and static analysis. | Add a tip about integrating code review and static analysis. |
+| CD Principles | Explains deployment automation and readiness. | Could mention blue/green and canary deployments. | Add a note about advanced deployment strategies. |
+| Pipeline Stages | Explains build, test, deploy steps. | Could mention artifact storage and promotion. | Add a tip about storing and promoting build artifacts. |
+| Popular CI/CD Tools | Lists and describes major tools. | Could mention self-hosted vs. cloud CI/CD. | Add a note about choosing between self-hosted and cloud. |
+| Example: GitHub Actions | Shows a practical YAML workflow. | Could mention secrets management and environment variables. | Add a note about using encrypted secrets and env vars. |
+| Summary Paragraph | Strong wrap-up, highlights automation and quality. | Could mention monitoring pipeline health. | Add a note about monitoring and alerting for CI/CD. |
+| Navigation Links | Maintains continuity between modules. | None. | Continue this practice for all modules. |
+
+### General Observations
+- The file is well-structured, with clear sections and logical flow.
+- Diagrams and YAML samples are modern and relevant.
+- Could further highlight compliance, security, and advanced deployment strategies.
+
+### Practical Recommendations
+- Add a note about compliance and traceability in CI/CD.
+- Emphasize securing secrets and pipeline steps.
+- Recommend code review and static analysis integration.
+- Suggest advanced deployment strategies (blue/green, canary).
+- Add tips for artifact storage and promotion.
+- Compare self-hosted vs. cloud CI/CD options.
+- Highlight secrets management and monitoring.
+- Continue using navigation links for user flow.
+
+---
+
+## Audit: angular_course_enhancement_report.md - **DONE**
